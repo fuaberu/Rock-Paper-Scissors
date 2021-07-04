@@ -16,12 +16,20 @@
     else if (playerSelection == 'rock' & computerselection == 'paper' || 
     playerSelection == 'scissors' & computerselection == 'rock' || 
     playerSelection == 'paper' & computerselection == 'scissors')
-  { alert('you lost')
+  { 
+    alert('you lost')
   } 
     else if (playerSelection == 'paper' & computerselection == 'rock' || 
     playerSelection == 'rock' & computerselection == 'scissors' || 
     playerSelection == 'scissors' & computerselection == 'paper')
-      { alert('you won')
+  { 
+    alert('you won')
+  }
+    else if (playerSelection !== 'paper' || 
+    playerSelection !== 'rock' || 
+    playerSelection !== 'scissors')
+  {
+    alert ('this is a non valid answer.')
   }
 // return a string declaring the winner
 
