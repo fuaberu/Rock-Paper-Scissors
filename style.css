@@ -3,24 +3,44 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: sans-serif;
+    
+}
+body {
+    background-color: blueviolet;
 }
 section {
     background-color: aqua;
     margin: 0rem 20% 0rem 20%;
     padding: 2rem;
+    border-radius: 5px;
 }
 .score {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 h1 {
     text-align: center;
     padding: 2rem;
+    font-size: 3rem;
 }
-.score p {
+h2 {
     text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.image p {
+    margin: 0px;
+    padding: 1rem;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .image {
@@ -37,7 +57,7 @@ h1 {
 }
 .options button {
     padding: 0.625rem 1.25rem;
-    background-color: aquamarine;
+    background-color: rgb(81, 150, 127);
     border-radius: 3px;
     border: 0px;
 }
