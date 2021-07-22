@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+section {
+    background-color: aqua;
+    margin: 0rem 20% 0rem 20%;
+    padding: 2rem;
+}
+.score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+h1 {
+    text-align: center;
+    padding: 2rem;
+}
+.score p {
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.options button {
+    padding: 0.625rem 1.25rem;
+    background-color: aquamarine;
+    border-radius: 3px;
+    border: 0px;
+}
