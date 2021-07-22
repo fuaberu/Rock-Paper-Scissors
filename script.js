@@ -31,7 +31,13 @@ const match = () => {
     // compare the answers of the computer and the player to dicide who  wins the round
     const compare = (playerSelection,computerselection) => {   
       const winner = document.querySelector('.winner');
-      if (playerSelection === computerselection) {
+      if (playerScore > 4) {
+        winner.textContent = 'Player won the game';
+        return;
+      } else if (computerScore > 4) {
+        winner.textContent = 'Computer won the game';
+        return;
+      } else if (playerSelection === computerselection) {
         winner.textContent = 'It is a tie';
         return; 
       }
@@ -52,16 +58,11 @@ const match = () => {
         winner.textContent = 'Player wins';
         updateScore();
         return;
-      } else if (playerScore === 5) {
-        winner.textContent = 'Player won the game';
-      } else if (computerScore === 5) {
-        winner.textContent = 'Computer won the game';
-      }
+      } 
     }
   }
-    while(playerScore < 5 || computerScore < 5) {
-      game();
-    } 
+  game ();
+    
 }
 
 match();
